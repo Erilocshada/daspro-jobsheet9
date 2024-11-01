@@ -1,12 +1,20 @@
 
 import java.util.Scanner;
 
-public class SearchNilai20 {
+public class Percobaan4Pertanyaan {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hasil = 0;
-        int[] arrNilai = {80,85,78,96,90,82,86};
-        int key = 90;
+
+        System.out.println("Masukkan banyaknya nilai yang diinput :");
+        int jmlNilai = sc.nextInt();
+        int[] arrNilai = new int[jmlNilai];
+        for (int i = 0; i < arrNilai.length; i++) {
+            System.out.println("Masukkan Nilai Mahasiswa ke-" +(i+1)+":");
+            arrNilai[i] = sc.nextInt();
+        }
+        System.out.println("Masukkan Nilai yang ingin dicari :");
+        int key = sc.nextInt();
 
         for (int i = 0; i < arrNilai.length; i++) {
             if (key == arrNilai[i]) {
