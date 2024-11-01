@@ -15,6 +15,11 @@ public class ArrayRataNilai {
             total += nilaiMhs[i];
         }
         rataRata = total/nilaiMhs.length;
+        if (rataRata > 70) {
+            System.out.println("Lulus!");
+        }else {
+            System.out.println("Tidak Lulus!");
+        }
         System.out.println("Rata rata nilai = " + rataRata);
         sc.close();
     }
